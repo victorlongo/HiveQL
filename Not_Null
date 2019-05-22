@@ -1,0 +1,17 @@
+-- Piece of code to bring not null, empty or 0 values from a table
+-- Uncomment lines 4, 5, 16 and 17 to count ocurrences
+
+-- SELECT count(*) FROM 
+-- (
+SELECT 
+field1
+
+FROM 
+bank.table
+
+WHERE 
+field1  NOT IN ('', ' ', '0')
+AND field1  <> 0
+AND field1  IS NOT NULL
+-- ) as tabela
+-- ;
